@@ -1,1 +1,1 @@
-print("Hi, AHUer!")
+ptint("xs")

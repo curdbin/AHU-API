@@ -70,6 +70,10 @@ def __deflate(data):
     except zlib.error:
         return zlib.decompress(data)
 def geturl(serviceType):
+    """获取数字安大的URL
+    serviceType : integer
+    1: 数字安大
+    """
     # load configrations
     parentpath = os.path.abspath(os.path.dirname(os.getcwd()))
     cfgpath = os.path.join(parentpath, "auth.ini")

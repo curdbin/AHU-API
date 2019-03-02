@@ -26,4 +26,4 @@
 
 import UrlUtil
 
-print(UrlUtil.geturl())
+print(UrlUtil.geturl('xsx'))

@@ -69,7 +69,7 @@ def __deflate(data):
         return zlib.decompress(data, -zlib.MAX_WBITS)
     except zlib.error:
         return zlib.decompress(data)
-def geturl():
+def geturl(serviceType):
     # load configrations
     parentpath = os.path.abspath(os.path.dirname(os.getcwd()))
     cfgpath = os.path.join(parentpath, "auth.ini")

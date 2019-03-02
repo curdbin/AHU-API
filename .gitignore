@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 src/auth.ini
 **/__pycache__/**
 .gitignore
 src/digital_ahu/__pycache__
-=======
-src/auth.ini
-**/.vscode/**
->>>>>>> a88542dffe4166fbfc5307ffecdacc82a9df855f

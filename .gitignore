@@ -1,5 +1,5 @@
 <<<<<<< HEAD
-src/auth.ini\
+src/auth.ini
 **/__pycache__/**
 .gitignore
 src/digital_ahu/__pycache__

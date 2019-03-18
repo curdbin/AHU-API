@@ -70,10 +70,13 @@ def __deflate(data):
     except zlib.error:
         return zlib.decompress(data)
 def geturl(serviceType):
-    """获取数字安大的URL
-    serviceType : integer
+    '''
+    获取数字安大的URL (serviceType : integer)
     1: 数字安大
-    """
+    2: 旧版教务系统
+    3: 电子课表
+    4：自助报账
+    '''
     # load configrations
     parentpath = os.path.abspath(os.path.dirname(os.getcwd()))
     cfgpath = os.path.join(parentpath, "auth.ini")
@@ -89,7 +92,7 @@ def geturl(serviceType):
 
     service1="http://portal.ahu.edu.cn:8001/dcp/index.jsp" # 数字安大
     service2="http://jw3.ahu.cn/login_cas.aspx" # 旧版教务系统
-    service3="http://101.76.160.244:8080/User" # 电子课表
+    service3="http://101.76.160.244:8080/User/Schedule" # 电子课表
     service4="http://101.76.160.144/CASahu/ahucas?redirectUrl=" # 校园卡服务中心
     service5="http://bz.ahu.edu.cn/LoginByCas"  # 自助报账
     res2= __postData(stuId, dPasswd, mats[0], service2).decode('gbk')

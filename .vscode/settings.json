@@ -2,5 +2,6 @@
     "python.pythonPath": "/usr/bin/python3",
     "python.linting.flake8Enabled": false,
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true
+    "python.linting.pylintEnabled": true,
+    "python.jediEnabled": true
 }

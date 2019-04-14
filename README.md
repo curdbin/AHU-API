@@ -1,4 +1,6 @@
-# AHU-API
+<p align="center">
+  <img src="./docs/images/logo.png">
+</p>
 
 # Introduction
 The most common use APIs for AHU. Made with ❤ by [@lolimay](https://github.com/lolimay), [@WesteryCN](https://github.com/WesteryCN) and [@JOHNYXUU](https://github.com/JOHNYXUU).

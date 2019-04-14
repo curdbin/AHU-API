@@ -1,11 +1,11 @@
 # AHU-API
 
 # Introduction
-封装安大常用的接口
+The most common use APIs for AHU. Made with ❤ by [@lolimay](https://github.com/lolimay), [@WesteryCN](https://github.com/WesteryCN) and [@JOHNYXUU](https://github.com/JOHNYXUU).
 
 # Development
 ## Prerequisites
-Please ensure that you have installed following stuffs before officially starting you development:
+Please **ensure** that you have installed following stuff before officially starting your development:
 - pip >= 19.0.3
 - python3 >= 3.6.5
 - Node.js >= 11.12.0
@@ -22,12 +22,21 @@ pip install -r requirements.txt
 npm install
 ````
 ## Configure your password
-
-````
+````bash
 cd src
 mv auth.example.ini auth.ini
 ````
 Rename `auth.example.ini` to `auth.ini`，and write your student number and password into this file.
+
+## Run
+### Linux
+````
+python3 main.py
+````
+### Windows
+````
+python.exe main.py
+````
 
 # Architecture
 ````bash
@@ -38,8 +47,11 @@ Rename `auth.example.ini` to `auth.ini`，and write your student number and pass
 ````
 
 # References
-- [zf.ahu.cn](http://zf.ahu.cn) 新版正方教务系统
-- [portal.ahu.edu.cn](http://portal.ahu.edu.cn) 数字安大
+1. [http://zf.ahu.cn](http://zf.ahu.cn)
+2. [http://portal.ahu.edu.cn](http://portal.ahu.edu.cn)
+
+# LICENSE
+The project is open sourced under the [MIT](./LICENSE) License.
 
 # Contributors
-[<img alt="nujhong" src="https://avatars3.githubusercontent.com/u/32427260?s=460&v=4&s=117" width="117">](https://github.com/lolimay)[<img alt="westeryCN" src="https://avatars1.githubusercontent.com/u/37997096?s=460&v=4&s=117" width="117">](https://github.com/westeryCN)
+[<img alt="nujhong" src="https://avatars3.githubusercontent.com/u/32427260?s=460&v=4&s=117" width="117">](https://github.com/lolimay)[<img alt="westeryCN" src="https://avatars1.githubusercontent.com/u/37997096?s=460&v=4&s=117" width="117">](https://github.com/westeryCN)[<img alt="westeryCN" src="https://avatars1.githubusercontent.com/u/49187119?s=460&s=117" width="117">](https://github.com/JOHNYXUU)

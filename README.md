@@ -10,6 +10,8 @@ Please **ensure** that you have installed following stuff before officially star
 - python3 >= 3.6.5
 - Node.js >= 11.12.0
 - npm >= 6.9.0
+- VS Code >= 1.33.1 (Recommended)
+- VS Code Extension: Python (Recommended)
 
 ## Fetch the source code
 ````bash
@@ -24,7 +26,7 @@ npm install
 ## Configure your password
 ````bash
 cd src
-mv auth.example.ini auth.ini
+mv auth.example.ini auth.ini # Only for linux, use RENAME in windows instead.
 ````
 Rename `auth.example.ini` to `auth.ini`，and write your student number and password into this file.
 

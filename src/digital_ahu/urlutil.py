@@ -75,7 +75,8 @@ def geturl(serviceType):
     1: 数字安大
     2: 旧版教务系统
     3: 电子课表
-    4：自助报账
+    4：校园卡服务中心
+    5: 自助报账
     '''
     # load configrations
     parentpath = os.path.abspath(os.path.dirname(os.getcwd()))
@@ -90,12 +91,17 @@ def geturl(serviceType):
     pat = re.compile('<input type="hidden" name="lt" value="(.*)" />')
     mats = pat.findall(res)
 
-    service1="http://portal.ahu.edu.cn:8001/dcp/index.jsp" # 数字安大
-    service2="http://jw3.ahu.cn/login_cas.aspx" # 旧版教务系统
-    service3="http://101.76.160.244:8080/User/Schedule" # 电子课表
-    service4="http://101.76.160.144/CASahu/ahucas?redirectUrl=" # 校园卡服务中心
-    service5="http://bz.ahu.edu.cn/LoginByCas"  # 自助报账
-    res2= __postData(stuId, dPasswd, mats[0], service1).decode('gbk')
+    if serviceType == 1:
+        target_url="http://portal.ahu.edu.cn:8001/dcp/index.jsp" # 数字安大
+    elif serviceType == 2:
+        target_url="http://jw3.ahu.cn/login_cas.aspx" # 旧版教务系统
+    elif serviceType == 3:
+        target_url="http://101.76.160.244:8080/User/Schedule" # 电子课表
+    elif serviceType == 4:
+        target_url="http://101.76.160.144/CASahu/ahucas?redirectUrl=" # 校园卡服务中心
+    else:
+        target_url="http://bz.ahu.edu.cn/LoginByCas"  # 自助报账
+    res2= __postData(stuId, dPasswd, mats[0], target_url).decode('gbk')
 
     pat2 = re.compile('window.location.href="(.*)";')
     mats2 = pat2.findall(res2)

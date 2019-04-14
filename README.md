@@ -4,7 +4,14 @@
 封装安大常用的接口
 
 # Development
-## Fetch source code
+## Prerequisites
+Please ensure that you have installed following stuffs before officially starting you development:
+- pip >= 19.0.3
+- python3 >= 3.6.5
+- Node.js >= 11.12.0
+- npm >= 6.9.0
+
+## Fetch the source code
 ````bash
 git clone git@github.com:curdbin/AHU-API.git
 ````
@@ -12,6 +19,7 @@ git clone git@github.com:curdbin/AHU-API.git
 ````bash
 cd AHU-API
 pip install -r requirements.txt
+npm install
 ````
 ## Configure your password
 

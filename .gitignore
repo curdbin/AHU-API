@@ -2,3 +2,4 @@ src/auth.ini
 **/__pycache__/**
 .gitignore
 src/digital_ahu/__pycache__
+**/node_modules/**

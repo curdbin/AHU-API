@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-# MIT License
-
 # Copyright (c) 2019 Westery <i@2git.cn>
 #                    lolimay <lolimay@lolimay.cn>
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -80,7 +78,7 @@ def geturl(serviceType):
     '''
     # load configrations
     parentpath = os.path.abspath(os.path.dirname(os.getcwd()))
-    cfgpath = os.path.join(parentpath, "auth.ini")
+    cfgpath = os.path.join(parentpath, "src/auth.ini")
     conf = configparser.ConfigParser()
     conf.read(cfgpath, encoding="utf-8")
     items=conf.items('ALL')

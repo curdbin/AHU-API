@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 
-# MIT License
-
 # Copyright (c) 2019 Westery <i@2git.cn>
 #                    lolimay <lolimay@lolimay.cn>
 # Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -24,8 +22,8 @@
 
 # coding=utf-8
 
-import urlutil
+from utils.urlutil import geturl
 
-home_url = urlutil.geturl(5)
+home_url = geturl(5)
 
 print(home_url)

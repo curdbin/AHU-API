@@ -23,6 +23,10 @@ npm install
 ````
 ## Configure your password
 
+````
+cd src
+mv auth.example.ini auth.ini
+````
 Rename `auth.example.ini` to `auth.ini`，and write your student number and password into this file.
 
 # Architecture

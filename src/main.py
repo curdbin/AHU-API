@@ -22,8 +22,19 @@
 
 # coding=utf-8
 
+"""
+main function to test the AHU-APIs.
+"""
+
 from utils.urlutil import geturl
 
-home_url = geturl(5)
+def main():
+    """
+    Entry point if called as an executable
+    """
+    home_url = geturl(5)
 
-print(home_url)
+    print(home_url)
+
+if __name__ == '__main__':
+    main()

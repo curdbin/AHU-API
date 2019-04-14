@@ -7,7 +7,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "lint": "pylint src"
+    "lint": "pylint src --output-format=colorized --load-plugins pylint_quotes --msg-template='{path}:{line},{column} {obj}{msg}'"
   },
   "husky": {
     "hooks": {

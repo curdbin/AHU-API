@@ -95,7 +95,7 @@ def geturl(serviceType):
     service3="http://101.76.160.244:8080/User/Schedule" # 电子课表
     service4="http://101.76.160.144/CASahu/ahucas?redirectUrl=" # 校园卡服务中心
     service5="http://bz.ahu.edu.cn/LoginByCas"  # 自助报账
-    res2= __postData(stuId, dPasswd, mats[0], service2).decode('gbk')
+    res2= __postData(stuId, dPasswd, mats[0], service1).decode('gbk')
 
     pat2 = re.compile('window.location.href="(.*)";')
     mats2 = pat2.findall(res2)

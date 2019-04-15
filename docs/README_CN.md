@@ -3,7 +3,7 @@
 </p>
 
 # 介绍
-The most common use APIs for AHU. Made with ❤ by [@lolimay](https://github.com/lolimay), [@WesteryCN](https://github.com/WesteryCN) and [@JOHNYXUU](https://github.com/JOHNYXUU).
+安徽大学通用API库. Made with ❤ by [@lolimay](https://github.com/lolimay), [@WesteryCN](https://github.com/WesteryCN) and [@JOHNYXUU](https://github.com/JOHNYXUU).
 
 # 开发
 ## 前提准备

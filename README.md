@@ -39,9 +39,9 @@ pip install -r requirements.txt # add `sudo` prefix if permission denied
 ## Configure your password
 ````bash
 cd src
-mv auth.example.ini auth.ini # Only for linux, use RENAME in windows instead.
+cp auth.example.ini auth.ini # Only for linux, use RENAME in windows instead.
 ````
-Rename `auth.example.ini` to `auth.ini`，and write your student number and password into this file.
+Copy `auth.example.ini` to `auth.ini`，and write your student number and password into this file.
 
 ## Run
 ### Linux

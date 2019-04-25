@@ -24,14 +24,14 @@ git clone git@github.com:curdbin/AHU-API.git
 cd AHU-API
 npm install # install node dependencies
 ````
-### local install
+### Local install
 We strongly recommend you to install python3 dependencies locally by using `virtualenv`:
 ````bash
 virtualenv venv -p python3
 source venv/bin/activate
 pip install -r requirements.txt
 ````
-### global install
+### Global install
 Or you can just install python3 dependencies globally by following command:
 ````bash
 pip install -r requirements.txt # add `sudo` prefix if permission denied
